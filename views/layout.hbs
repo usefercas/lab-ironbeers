@@ -1,0 +1,32 @@
+<!-- views/layout.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>IronNBA</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css" />
+</head>
+
+<body>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/beers">Cervezas</a></li>
+            <li><a href="/randomBeer">Random Beer</a></li>
+        </ul>
+    </nav>
+
+
+    {{!-- any page we want to render will be "plugged in" here, in the "body" with triple stashes --}}
+    {{!-- this is the only page that will have full html setup --}}
+    {{!-- if there's anything you want to have on each page, it will come from here
+    ex. navbar, header, footer, etc --}}
+    <main>
+        {{{ body }}}
+    </main>
+</body>
+
+</html>
